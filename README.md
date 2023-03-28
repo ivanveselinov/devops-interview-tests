@@ -15,17 +15,17 @@ Goal: Starting from this local variable:
 locals {
   users = {
     "user1" = {
-      username = "user1"
+      username = "jerome"
       groups   = ["group1", "group2"]
     },
     "user2" = {
-      username = "user2"
+      username = "marc"
       groups   = ["group2", "group3"]
     }
   }
 }
 ```
-=> create a terraform module that accepts a users variable and creates an aws_iam_user with its associated groups. use for-each, dynamic blocks to acheive your result.<br>
+=> create a terraform module that accepts a users variable and creates an aws_iam_user with its associated groups. Use for-each, dynamic blocks to achieve your result.<br>
 
 <br><b>Exercise 3: Dockerfile:</b><br>
 Goal: Write a multi-stage Dockerfile: The first stage will create a index.html containing:
