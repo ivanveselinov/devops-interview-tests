@@ -9,7 +9,7 @@ Pre-requisites: bash scripting or Jenkins pipeline knowledge<br>
 Goal: Parse the file https://github.com/BGLCorp/devops-interview-tests/blob/main/ec2-describe-instances.json using a bash script or Jenkins pipeline, and retrieve all the InstanceId that where launched before 2022-04-12T13:00:00<br>
 
 <br><b>Exercise 2: Terraform:</b><br>
-Pre-requisites: terraform installed<br>
+Pre-requisites: terraform installed, access to an AWS account to test<br>
 Goal: Starting from this local variable:
 ```
 locals {
@@ -25,7 +25,7 @@ locals {
   }
 }
 ```
-=> create a terraform module that accepts a users variable and creates an aws_iam_user with its associated groups. Use for-each, dynamic blocks to achieve your result.<br>
+=> create a terraform module that uses the above local variable and creates the 2 aws_iam_user with their associated groups. Use for-each blocks to achieve your result.<br>
 
 <br><b>Exercise 3: Dockerfile:</b><br>
 Goal: Write a multi-stage Dockerfile: The first stage will create a index.html containing:
