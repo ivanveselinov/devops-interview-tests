@@ -25,7 +25,7 @@ locals {
   }
 }
 ```
-=> create a terraform module that uses the above local variable and creates the 2 aws_iam_user with their associated groups. Use for-each blocks to achieve your result.<br>
+=> create a terraform module that uses the above local variable to create the 3 groups, the 2 IAM users and their group association.<br>
 
 <br><b>Exercise 3: Dockerfile:</b><br>
 Goal: Write a multi-stage Dockerfile: The first stage will create a index.html containing:
